@@ -1,0 +1,290 @@
+$md: 768px;
+@mixin md {
+  @media (max-width: ($md)) {
+    @content;
+  }
+}
+
+html{
+  /* font-size: 16px;  */
+  padding: 0;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic Pro';
+}
+
+.content-detail{
+  transition: opacity .2s ease-in;
+  opacity: 0.01;
+}
+
+.content-detail.show{
+  opacity: 1;
+}
+
+#top {
+  display: flex;
+  @include md{
+    display: block;
+  }
+  padding-bottom: 10px;
+  align-items: center;
+  background: #536976;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  #top-left{
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 5% 0 5%;
+
+    #image-div{
+      width: 100%;
+      text-align: center;
+      #my-icon{
+        width: 70%;
+        margin: 20px 0 0 0;
+      }
+      @include md{
+        text-align: center;        
+      }
+    }
+
+  }
+
+  #top-right{
+    div{
+      @include md{
+        text-align: center;
+      }
+      line-height: 125%;
+    }
+    flex: auto;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+    // font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+    #name{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+    #job{
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+    #master, #live{
+      font-size: 1.0rem;
+      color: #ccc;
+      margin-top: 15px;
+      #iis:link, #iis:visited{
+        color: #ccc;
+        transition: all 0.2s;
+      }
+      
+      #iis:hover{
+        color: white;    
+      }
+    }
+    #icons-div{
+      width: 100%;
+      text-align: left;
+      margin-top: 15px;
+      @include md{
+        text-align: center;
+      }
+      img{
+        width: 6%;    
+        -webkit-filter: brightness(0.7);
+        transition: all 0.3s;
+        margin: 5px;
+        &:hover{
+          -webkit-filter: brightness(1.0);
+        }
+        @include md{
+          width: 15%;
+          -webkit-filter: brightness(0.85);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+#lang-switch-div{
+  font-size: 1.0rem;
+  color: #bbb;
+}
+
+#bottom{
+  background: -webkit-linear-gradient(to right, #eef2f3, #b2bec7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #b2bec7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  .part-title-line{
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 20px 15px 20px 15px;
+  }
+  .part-title{
+    background: -webkit-linear-gradient(to top, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1.5rem;
+  }
+}
+
+#skill{
+  padding: 0px 20px 20px 20px; 
+  #skill-description{
+    padding-left: 20px;
+  }
+}
+
+#portfolio {
+  // display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 20px 20px 20px; 
+  // background: -webkit-linear-gradient(to right, #eef2f3, #b2bec7);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #eef2f3, #b2bec7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  #portfolio-title-line{
+    // margin: 15px auto 15px 35px;
+    @include md{
+      // margin: 15px 0 15px 0;   
+      text-align: center;
+    }
+    #portfolio-title{
+      .lang-switch{
+        transition: all 0.2s;    
+      }   
+    }
+    #lang-switch-area{
+      font-size: 0.8rem;
+      color:#38465e;
+    }
+    .no-select-lang{
+      cursor: pointer;    
+      text-decoration: underline;
+    }
+    .no-select-lang:hover{
+      color:white;
+    }  
+  }
+
+  #portfolio-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .portfolio-items{
+      /* width: 30%; */
+      width: 24vw;
+      height: 20vw;
+      min-width: 300px;
+      min-height: 240px;
+      border-radius: 5px;
+      overflow:hidden;
+      margin-bottom: 50px;
+      /* background: white; */
+      margin:0px 15px 20px 25px;
+      position: relative;   
+      @include md{
+        margin-bottom: 30px;
+        height: auto;
+        background: -webkit-linear-gradient(to top, #292E49dd, #536976dd);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #292E49dd, #536976dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      .portfolio-img-div{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 5px;
+        @include md{
+          position: static;
+          height: auto;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          object-fit: contain;
+          @include md{
+            border-radius: 0;
+          }
+        }
+      }
+
+      a{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+      }
+      .content-detail{
+        // transition-duration:3s;
+        background: -webkit-linear-gradient(to top, #292E49dd, #536976dd);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #292E49dd, #536976dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        color: white;
+        padding:5%;
+        @include md{
+          position: static;
+          display: block;
+          height: auto;
+          background: transparent;
+          opacity: 1;
+        }
+      
+        .content-title{
+          font-size: 1.2rem;
+          font-weight: bold;
+          font-style: normal;
+          margin-bottom: 5px; 
+        }
+      
+        .content-description{
+          font-size: 0.9rem;
+          .item-year{
+            color:#ddd;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// .content-enter {
+//   opacity: 0.01;
+// }
+
+// .content-enter.content-enter-active {
+//   opacity: 1;
+//   transition: opacity .3s ease-in;
+// }
+// .content-leave {
+//   opacity: 1;
+// }
+// .content-leave.content-leave-active {
+//   opacity: 0.01;
+//   transition: opacity .3s ease-in;
+// }
+
+
+

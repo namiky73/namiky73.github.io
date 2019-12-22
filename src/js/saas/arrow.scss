@@ -1,0 +1,95 @@
+// https://copypet.jp/codedescription/1100/
+
+.cp_arrows *, .cp_arrows *:before, .cp_arrows *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_arrows {
+	position: relative;
+	display: flex;
+	height: 50px;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+.cp_arrows .cp_arrow {
+	position: absolute;
+    width: 60px;
+    left: calc( 50% - 30px ); // center
+	height: 10px;
+	-webkit-transform: scale(0.3);
+	        transform: scale(0.3);
+	-webkit-animation: arrow-move07 3s ease-out infinite;
+	        animation: arrow-move07 3s ease-out infinite;
+	opacity: 0;
+}
+.cp_arrows .cp_arrow:first-child {
+	-webkit-animation: arrow-move07 3s ease-out 1s infinite;
+	        animation: arrow-move07 3s ease-out 1s infinite;
+}
+.cp_arrows .cp_arrow:nth-child(2) {
+	-webkit-animation: arrow-move07 3s ease-out 2s infinite;
+	        animation: arrow-move07 3s ease-out 2s infinite;
+}
+.cp_arrows .cp_arrow:before,
+.cp_arrows .cp_arrow:after {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	content: '';
+	border-radius: 2px;
+    // background: #2196f3;
+    background: #FFBE71;    
+}
+.cp_arrows .cp_arrow:before {
+	left: 1px;
+	-webkit-transform: skewY(30deg);
+	        transform: skewY(30deg);
+}
+.cp_arrows .cp_arrow:after {
+	right: 1px;
+	width: 50%;
+	-webkit-transform: skewY(-30deg);
+	        transform: skewY(-30deg);
+}
+@-webkit-keyframes arrow-move07 {
+	25% {
+		opacity: 0.6;
+	}
+	43.75% {
+		-webkit-transform: translateY(1em);
+		        transform: translateY(1em);
+		opacity: 0.8;
+	}
+	62.5% {
+		-webkit-transform: translateY(2em);
+		        transform: translateY(2em);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateY(3em) scale(0.5);
+		        transform: translateY(3em) scale(0.5);
+		opacity: 0;
+	}
+}
+@keyframes arrow-move07 {
+	25% {
+		opacity: 0.6;
+	}
+	43.75% {
+		-webkit-transform: translateY(1em);
+		        transform: translateY(1em);
+		opacity: 0.8;
+	}
+	62.5% {
+		-webkit-transform: translateY(2em);
+		        transform: translateY(2em);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateY(3em) scale(0.5);
+		        transform: translateY(3em) scale(0.5);
+		opacity: 0;
+	}
+}

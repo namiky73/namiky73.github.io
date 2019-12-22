@@ -1,0 +1,333 @@
+@mixin lg {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+.swiper-container{
+    z-index: 5;
+    width: 900px;
+    @include sm{
+        width: 320px;
+    }
+    // height: 300px;
+}
+
+.slide-div{
+    margin: auto;
+    width: 300px;
+}
+
+.swiper-pagination {
+    bottom: 90% !important;
+}
+
+
+.swiper-pagination-bullet-active{
+    background-color: #5BAFC4;
+}
+
+.swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev {
+    // background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%235BAFC4'%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23FFBE71'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-container-rtl .swiper-button-next,
+.swiper-button-next {
+    // background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%235BAFC4'%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23FFBE71'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-next, .swiper-button-prev{
+    top:40%;
+    z-index: 15 !important;
+}
+
+.portfolio-image-div{
+    margin: 0 auto;
+}
+// #fukidashi
+
+#fukidashi{
+    position: relative;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+
+    line-height: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+    // background-color: #F4D4B0;
+    background-color: #FFBE71;
+}
+#fukidashi::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    right: 2px;
+    bottom: 2px;
+    border-left: 20px solid #FFBE71;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: rotate(45deg);
+}
+
+html{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #fafafa;
+    color:#246A7D;
+}
+
+body{
+    margin: 0;
+}
+
+.section-div{
+    margin: 50px 0 50px 0;
+    @include sm{
+        margin: 50px 0 0 0;
+    }
+    .section-title-div{
+        text-align: center;
+    }
+    .section-title{
+        font-size: 3.0rem;
+        @include sm{
+            font-size:2.5rem;
+        }
+        font-weight: 500;
+        text-align: center;
+        color: #246A7D;
+        background: linear-gradient(transparent 85%, #FFBE71 85%);
+    }
+}
+
+
+#top-div{
+    width: 100%;
+    font-size: 4.0rem;    
+    font-weight: 700;
+    background-color: #5BAFC4;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    padding: 50px 0 50px 0;
+    @include sm{
+        font-size:3.0rem;
+        padding: 30px 0;
+    }
+    #top-msg{
+        margin: auto;
+        position: relative;
+    }
+    #onigiri{
+        height: auto; 
+        width: 50px;  
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        pointer-events: none;
+    }
+}
+
+#who-div{
+    position: relative;
+    #who-info{
+        display: flex;
+        @include sm{
+            flex-direction: column;
+        }
+        justify-content: center;
+        margin-top: 30px;
+        #who-my-img-div{
+            width: 150px;
+            height: 150px;
+            margin-right: 15px;
+            text-align: center;
+            position: relative;
+            @include sm{
+                // width: 120px;
+                // height: 120px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            #who-my-img{
+                width: 100%;
+            }
+            #fukidashi-div{
+                position: absolute;
+                top: -20px;
+                left: -90px;
+                @include sm{
+                    top: -20px;
+                    left: -90px;
+                }
+            }
+        }
+        #who-my-name{
+            font-size: 2.0rem;
+            @include sm{
+                text-align: center;
+            }
+        }
+        #who-my-description{
+            margin-top: 5px;
+            font-weight: 300;
+            font-size: 1.2rem;
+            @include sm{
+                text-align: center;
+            }
+        }
+    }
+    #arrow-navigation{
+        position: absolute;
+        left : 50%;
+        bottom : -5%;
+        transform : translate(-50%, 0%);
+    }
+}
+
+.onigiri-hidden-area{
+    display: none;
+}
+
+.onigiri-hidden-area-2{
+    display: none;
+}
+
+#skill-div{
+    #skill-info{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        @include sm{
+            flex-direction: column;
+        }
+        .skill-detail{
+            margin: 0px 50px;
+            width: 250px;
+            @include sm{
+                margin: 0px auto 25px auto;
+            }
+            .skill-image-div{
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                @include sm{
+                    margin: auto;
+                }
+                img{
+                    width: 94%;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    padding: 3%;
+                }
+            }
+            #skill-onigiri-div{
+                background-color: #fff;
+                border-radius: 50%;
+                position: relative;
+                margin: 0 auto;
+                img{
+                    padding: 0%;
+                    opacity: 0.1;
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+            .skill-title{
+                margin-top: 15px;
+                text-align: center;
+                font-size: 1.5rem;
+                @include sm{
+                    margin: 3px;
+                }
+            }
+            .skill-description{
+                margin-top: 10px;
+                text-align: center;
+                font-weight: 300;
+                @include sm{
+                    margin: 3px;
+                }
+            }   
+        }
+    }
+}
+
+
+#portfolio-div{
+    #portfolio-info{
+        // display: flex;
+        // justify-content: center;
+        margin-top: 35px;
+        @include sm{
+            // flex-direction: column;
+        }
+        .portfolio-detail{
+            // margin: 0px 80px;
+            @include sm{
+                margin: 0px auto 25px auto;
+            }
+            .portfolio-image-div{
+                width: 220px;
+                height: 165px;
+                background-color: #f0f0f0;
+                margin: 0 auto;
+                @include sm{
+                    margin: auto;
+                }
+                img{
+                    width: 100%;
+                    border: 3px solid #eee;
+                    box-sizing: border-box;
+                }
+            }
+            .portfolio-title{
+                width: 100%;
+                margin-top: 15px;
+                text-align: center;
+                font-size: 1.5rem;
+                @include sm{
+                    margin: 3px;
+                }
+            }
+            .portfolio-description{
+                width: 100%;
+
+                margin-top: 10px;
+                text-align: center;
+                font-weight: 300;
+                @include sm{
+                    margin: 3px;
+                }
+            }   
+        }
+    }
+}
+

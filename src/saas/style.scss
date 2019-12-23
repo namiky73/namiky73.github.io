@@ -14,8 +14,18 @@
     }
 }
 
+#onigiri{
+    height: auto; 
+    width: 50px;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    // pointer-events: none;
+}
+
 .swiper-container{
-    z-index: 5;
+    z-index: auto;
     width: 900px;
     @include sm{
         width: 320px;
@@ -139,15 +149,6 @@ body{
     #top-msg{
         margin: auto;
         position: relative;
-    }
-    #onigiri{
-        height: auto; 
-        width: 50px;  
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        pointer-events: none;
     }
 }
 

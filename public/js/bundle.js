@@ -1379,14 +1379,14 @@ anime.random = function (min, max) { return Math.floor(Math.random() * (max - mi
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/js/saas/arrow.scss":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--4-1!./node_modules/sass-loader/dist/cjs.js??ref--4-2!./src/js/saas/arrow.scss ***!
-  \*********************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/saas/arrow.scss":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--4-1!./node_modules/sass-loader/dist/cjs.js??ref--4-2!./src/saas/arrow.scss ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")();
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")();
 // imports
 
 
@@ -1398,19 +1398,19 @@ exports.push([module.i, ".cp_arrows *,.cp_arrows *:before,.cp_arrows *:after{-we
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/js/saas/style.scss":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--4-1!./node_modules/sass-loader/dist/cjs.js??ref--4-2!./src/js/saas/style.scss ***!
-  \*********************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/saas/style.scss":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--4-1!./node_modules/sass-loader/dist/cjs.js??ref--4-2!./src/saas/style.scss ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")();
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")();
 // imports
 
 
 // module
-exports.push([module.i, ".swiper-container{z-index:5;width:900px}@media screen and (max-width: 768px){.swiper-container{width:320px}}.slide-div{margin:auto;width:300px}.swiper-pagination{bottom:90% !important}.swiper-pagination-bullet-active{background-color:#5BAFC4}.swiper-container-rtl .swiper-button-prev,.swiper-button-prev{background-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23FFBE71'%2F%3E%3C%2Fsvg%3E\")}.swiper-container-rtl .swiper-button-next,.swiper-button-next{background-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23FFBE71'%2F%3E%3C%2Fsvg%3E\")}.swiper-button-next,.swiper-button-prev{top:40%;z-index:15 !important}.portfolio-image-div{margin:0 auto}#fukidashi{position:relative;padding:20px;width:80px;height:80px;line-height:20px;display:table-cell;vertical-align:middle;border-radius:50%;text-align:center;color:#ffffff;letter-spacing:0.2em;font-size:14px;background-color:#FFBE71}#fukidashi::before{content:'';position:absolute;display:block;width:0;height:0;right:2px;bottom:2px;border-left:20px solid #FFBE71;border-top:10px solid transparent;border-bottom:10px solid transparent;transform:rotate(45deg)}html{font-family:'M PLUS Rounded 1c', sans-serif;background-color:#fafafa;color:#246A7D}body{margin:0}.section-div{margin:50px 0 50px 0}@media screen and (max-width: 768px){.section-div{margin:50px 0 0 0}}.section-div .section-title-div{text-align:center}.section-div .section-title{font-size:3.0rem;font-weight:500;text-align:center;color:#246A7D;background:linear-gradient(transparent 85%, #FFBE71 85%)}@media screen and (max-width: 768px){.section-div .section-title{font-size:2.5rem}}#top-div{width:100%;font-size:4.0rem;font-weight:700;background-color:#5BAFC4;color:#fff;text-align:center;vertical-align:middle;height:100%;padding:50px 0 50px 0}@media screen and (max-width: 768px){#top-div{font-size:3.0rem;padding:30px 0}}#top-div #top-msg{margin:auto;position:relative}#top-div #onigiri{height:auto;width:50px;position:absolute;top:0;left:0;z-index:10;pointer-events:none}#who-div{position:relative}#who-div #who-info{display:flex;justify-content:center;margin-top:30px}@media screen and (max-width: 768px){#who-div #who-info{flex-direction:column}}#who-div #who-info #who-my-img-div{width:150px;height:150px;margin-right:15px;text-align:center;position:relative}@media screen and (max-width: 768px){#who-div #who-info #who-my-img-div{margin:0 auto;text-align:center}}#who-div #who-info #who-my-img-div #who-my-img{width:100%}#who-div #who-info #who-my-img-div #fukidashi-div{position:absolute;top:-20px;left:-90px}@media screen and (max-width: 768px){#who-div #who-info #who-my-img-div #fukidashi-div{top:-20px;left:-90px}}#who-div #who-info #who-my-name{font-size:2.0rem}@media screen and (max-width: 768px){#who-div #who-info #who-my-name{text-align:center}}#who-div #who-info #who-my-description{margin-top:5px;font-weight:300;font-size:1.2rem}@media screen and (max-width: 768px){#who-div #who-info #who-my-description{text-align:center}}#who-div #arrow-navigation{position:absolute;left:50%;bottom:-5%;transform:translate(-50%, 0%)}.onigiri-hidden-area{display:none}.onigiri-hidden-area-2{display:none}#skill-div #skill-info{display:flex;justify-content:center;margin-top:35px}@media screen and (max-width: 768px){#skill-div #skill-info{flex-direction:column}}#skill-div #skill-info .skill-detail{margin:0px 50px;width:250px}@media screen and (max-width: 768px){#skill-div #skill-info .skill-detail{margin:0px auto 25px auto}}#skill-div #skill-info .skill-detail .skill-image-div{width:200px;height:200px;margin:0 auto}@media screen and (max-width: 768px){#skill-div #skill-info .skill-detail .skill-image-div{margin:auto}}#skill-div #skill-info .skill-detail .skill-image-div img{width:94%;border-radius:50%;background-color:#fff;padding:3%}#skill-div #skill-info .skill-detail #skill-onigiri-div{background-color:#fff;border-radius:50%;position:relative;margin:0 auto}#skill-div #skill-info .skill-detail #skill-onigiri-div img{padding:0%;opacity:0.1;width:50px;height:50px;position:absolute;left:50%;top:50%;transform:translate(-50%, -50%)}#skill-div #skill-info .skill-detail .skill-title{margin-top:15px;text-align:center;font-size:1.5rem}@media screen and (max-width: 768px){#skill-div #skill-info .skill-detail .skill-title{margin:3px}}#skill-div #skill-info .skill-detail .skill-description{margin-top:10px;text-align:center;font-weight:300}@media screen and (max-width: 768px){#skill-div #skill-info .skill-detail .skill-description{margin:3px}}#portfolio-div #portfolio-info{margin-top:35px}@media screen and (max-width: 768px){#portfolio-div #portfolio-info .portfolio-detail{margin:0px auto 25px auto}}#portfolio-div #portfolio-info .portfolio-detail .portfolio-image-div{width:220px;height:165px;background-color:#f0f0f0;margin:0 auto}@media screen and (max-width: 768px){#portfolio-div #portfolio-info .portfolio-detail .portfolio-image-div{margin:auto}}#portfolio-div #portfolio-info .portfolio-detail .portfolio-image-div img{width:100%;border:3px solid #eee;box-sizing:border-box}#portfolio-div #portfolio-info .portfolio-detail .portfolio-title{width:100%;margin-top:15px;text-align:center;font-size:1.5rem}@media screen and (max-width: 768px){#portfolio-div #portfolio-info .portfolio-detail .portfolio-title{margin:3px}}#portfolio-div #portfolio-info .portfolio-detail .portfolio-description{width:100%;margin-top:10px;text-align:center;font-weight:300}@media screen and (max-width: 768px){#portfolio-div #portfolio-info .portfolio-detail .portfolio-description{margin:3px}}\n", ""]);
+exports.push([module.i, "#onigiri{height:auto;width:50px;position:absolute;top:0;left:0;z-index:10}.swiper-container{z-index:auto;width:900px}@media screen and (max-width: 768px){.swiper-container{width:320px}}.slide-div{margin:auto;width:300px}.swiper-pagination{bottom:90% !important}.swiper-pagination-bullet-active{background-color:#5BAFC4}.swiper-container-rtl .swiper-button-prev,.swiper-button-prev{background-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23FFBE71'%2F%3E%3C%2Fsvg%3E\")}.swiper-container-rtl .swiper-button-next,.swiper-button-next{background-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23FFBE71'%2F%3E%3C%2Fsvg%3E\")}.swiper-button-next,.swiper-button-prev{top:40%;z-index:15 !important}.portfolio-image-div{margin:0 auto}#fukidashi{position:relative;padding:20px;width:80px;height:80px;line-height:20px;display:table-cell;vertical-align:middle;border-radius:50%;text-align:center;color:#ffffff;letter-spacing:0.2em;font-size:14px;background-color:#FFBE71}#fukidashi::before{content:'';position:absolute;display:block;width:0;height:0;right:2px;bottom:2px;border-left:20px solid #FFBE71;border-top:10px solid transparent;border-bottom:10px solid transparent;transform:rotate(45deg)}html{font-family:'M PLUS Rounded 1c', sans-serif;background-color:#fafafa;color:#246A7D}body{margin:0}.section-div{margin:50px 0 50px 0}@media screen and (max-width: 768px){.section-div{margin:50px 0 0 0}}.section-div .section-title-div{text-align:center}.section-div .section-title{font-size:3.0rem;font-weight:500;text-align:center;color:#246A7D;background:linear-gradient(transparent 85%, #FFBE71 85%)}@media screen and (max-width: 768px){.section-div .section-title{font-size:2.5rem}}#top-div{width:100%;font-size:4.0rem;font-weight:700;background-color:#5BAFC4;color:#fff;text-align:center;vertical-align:middle;height:100%;padding:50px 0 50px 0}@media screen and (max-width: 768px){#top-div{font-size:3.0rem;padding:30px 0}}#top-div #top-msg{margin:auto;position:relative}#who-div{position:relative}#who-div #who-info{display:flex;justify-content:center;margin-top:30px}@media screen and (max-width: 768px){#who-div #who-info{flex-direction:column}}#who-div #who-info #who-my-img-div{width:150px;height:150px;margin-right:15px;text-align:center;position:relative}@media screen and (max-width: 768px){#who-div #who-info #who-my-img-div{margin:0 auto;text-align:center}}#who-div #who-info #who-my-img-div #who-my-img{width:100%}#who-div #who-info #who-my-img-div #fukidashi-div{position:absolute;top:-20px;left:-90px}@media screen and (max-width: 768px){#who-div #who-info #who-my-img-div #fukidashi-div{top:-20px;left:-90px}}#who-div #who-info #who-my-name{font-size:2.0rem}@media screen and (max-width: 768px){#who-div #who-info #who-my-name{text-align:center}}#who-div #who-info #who-my-description{margin-top:5px;font-weight:300;font-size:1.2rem}@media screen and (max-width: 768px){#who-div #who-info #who-my-description{text-align:center}}#who-div #arrow-navigation{position:absolute;left:50%;bottom:-5%;transform:translate(-50%, 0%)}.onigiri-hidden-area{display:none}.onigiri-hidden-area-2{display:none}#skill-div #skill-info{display:flex;justify-content:center;margin-top:35px}@media screen and (max-width: 768px){#skill-div #skill-info{flex-direction:column}}#skill-div #skill-info .skill-detail{margin:0px 50px;width:250px}@media screen and (max-width: 768px){#skill-div #skill-info .skill-detail{margin:0px auto 25px auto}}#skill-div #skill-info .skill-detail .skill-image-div{width:200px;height:200px;margin:0 auto}@media screen and (max-width: 768px){#skill-div #skill-info .skill-detail .skill-image-div{margin:auto}}#skill-div #skill-info .skill-detail .skill-image-div img{width:94%;border-radius:50%;background-color:#fff;padding:3%}#skill-div #skill-info .skill-detail #skill-onigiri-div{background-color:#fff;border-radius:50%;position:relative;margin:0 auto}#skill-div #skill-info .skill-detail #skill-onigiri-div img{padding:0%;opacity:0.1;width:50px;height:50px;position:absolute;left:50%;top:50%;transform:translate(-50%, -50%)}#skill-div #skill-info .skill-detail .skill-title{margin-top:15px;text-align:center;font-size:1.5rem}@media screen and (max-width: 768px){#skill-div #skill-info .skill-detail .skill-title{margin:3px}}#skill-div #skill-info .skill-detail .skill-description{margin-top:10px;text-align:center;font-weight:300}@media screen and (max-width: 768px){#skill-div #skill-info .skill-detail .skill-description{margin:3px}}#portfolio-div #portfolio-info{margin-top:35px}@media screen and (max-width: 768px){#portfolio-div #portfolio-info .portfolio-detail{margin:0px auto 25px auto}}#portfolio-div #portfolio-info .portfolio-detail .portfolio-image-div{width:220px;height:165px;background-color:#f0f0f0;margin:0 auto}@media screen and (max-width: 768px){#portfolio-div #portfolio-info .portfolio-detail .portfolio-image-div{margin:auto}}#portfolio-div #portfolio-info .portfolio-detail .portfolio-image-div img{width:100%;border:3px solid #eee;box-sizing:border-box}#portfolio-div #portfolio-info .portfolio-detail .portfolio-title{width:100%;margin-top:15px;text-align:center;font-size:1.5rem}@media screen and (max-width: 768px){#portfolio-div #portfolio-info .portfolio-detail .portfolio-title{margin:3px}}#portfolio-div #portfolio-info .portfolio-detail .portfolio-description{width:100%;margin-top:10px;text-align:center;font-weight:300}@media screen and (max-width: 768px){#portfolio-div #portfolio-info .portfolio-detail .portfolio-description{margin:3px}}\n", ""]);
 
 // exports
 
@@ -10946,11 +10946,11 @@ Swiper.use(components);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! animejs/lib/anime.es.js */ "./node_modules/animejs/lib/anime.es.js");
+/* harmony import */ var animejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! animejs */ "./node_modules/animejs/lib/anime.es.js");
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/js/swiper.esm.bundle.js");
-/* harmony import */ var _saas_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./saas/style.scss */ "./src/js/saas/style.scss");
+/* harmony import */ var _saas_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../saas/style.scss */ "./src/saas/style.scss");
 /* harmony import */ var _saas_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_saas_style_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _saas_arrow_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./saas/arrow.scss */ "./src/js/saas/arrow.scss");
+/* harmony import */ var _saas_arrow_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../saas/arrow.scss */ "./src/saas/arrow.scss");
 /* harmony import */ var _saas_arrow_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_saas_arrow_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -10968,17 +10968,49 @@ class Onigiri{
     this.onigiriW = this.onigiri.clientWidth;
     this.onigiriH = this.onigiri.clientHeight;
     this.rotDirection = 1;
+    this.startX = 0;
+    this.startY = 0;
+    this.dragFlag = false;
+    this.onigiri.addEventListener('mousedown', this.dragStart.bind(this));
+    this.onigiri.addEventListener('mouseup', this.dragEnd.bind(this));
+    window.addEventListener('mouseup', this.dragEnd.bind(this), false);
+    window.addEventListener('mousemove', this.dragMove.bind(this), false);
+    this.onigiri.ondragstart = () => {return false;};
+  }
+
+  dragStart(event){
+    console.log(event);
+    this.dragFlag = true;
+    const bcr = this.onigiri.getBoundingClientRect();
+    this.startX = event.pageX - (bcr.left + window.pageXOffset);
+    this.startY = event.pageY - (bcr.top + window.pageYOffset);
+  }
+
+  dragEnd(event){
+    console.log(event);
+    this.dragFlag = false;
+  }
+
+  dragMove(event){
+    // event.preventDefault();
+    if(this.dragFlag){
+      this.onigiri.style.MozTransform = `translateX(${(event.pageX - this.startX)}px) translateY(${(event.pageY - this.startY)}px)`;
+      this.onigiri.style.webkitTransform = `translateX(${(event.pageX - this.startX)}px) translateY(${(event.pageY - this.startY)}px)`;
+      // this.onigiri.style.left = (event.pageX - this.startX) + "px";
+      // this.onigiri.style.top = (event.pageY - this.startY) + "px";
+      // console.log(event);
+    }
+
   }
 
   move(x, y, rot=360, duration=1000, center=true, callback=()=>{}){
-
     let targetX = x;
     let targetY = y;
     if(center){
       targetX -= this.onigiriW/2;
       targetY -= this.onigiriH/2;
     }
-    Object(animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    Object(animejs__WEBPACK_IMPORTED_MODULE_0__["default"])({
       targets: this.onigiri,
       translateX: {
         value: targetX, duration: duration, easing : 'linear'
@@ -10997,7 +11029,7 @@ class Onigiri{
   }
 
   appeal(){
-    Object(animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    Object(animejs__WEBPACK_IMPORTED_MODULE_0__["default"])({
       targets: this.onigiri,
       translateX: {
         value: 0, duration: 1, easing : 'linear'
@@ -11050,7 +11082,7 @@ class Nasuo{
 
   eatOnigiri(){
     this.fukidashi.innerText = "わーい \n わーい";
-    Object(animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    Object(animejs__WEBPACK_IMPORTED_MODULE_0__["default"])({
       targets: this.nasuo,
       rotate: {
         value: 10, duration: 200, easing: 'linear'
@@ -11122,7 +11154,7 @@ class SkillOnigiri{
   }
 
   appeal(){
-    Object(animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    Object(animejs__WEBPACK_IMPORTED_MODULE_0__["default"])({
       targets: this.skillOnigiriDiv,
       rotate: {
         value: 20, duration: 800, easing: 'easeInOutQuad'
@@ -11138,13 +11170,14 @@ class SkillOnigiri{
 
 class PageController{
   constructor(){
+
     this.setSliderFlag = false;
 
     this.nasuo = new Nasuo();
     console.log(this.nasuo);
 
     this.onigiri = new Onigiri();
-    document.onclick = (e) => this.onigiri.move(e.pageX, e.pageY, 360, 1000, true, this.onigiriMoveCallback.bind(this));
+    document.onclick = (e) => this.onigiri.move(e.pageX, e.pageY, 360, 750, true, this.onigiriMoveCallback.bind(this));
     this.onigiri.appeal();
 
     this.skillOnigiri = new SkillOnigiri(this.onigiri);
@@ -11226,40 +11259,40 @@ window.onload = () => {
 
 /***/ }),
 
-/***/ "./src/js/saas/arrow.scss":
-/*!********************************!*\
-  !*** ./src/js/saas/arrow.scss ***!
-  \********************************/
+/***/ "./src/saas/arrow.scss":
+/*!*****************************!*\
+  !*** ./src/saas/arrow.scss ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--4-1!../../../node_modules/sass-loader/dist/cjs.js??ref--4-2!./arrow.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/js/saas/arrow.scss");
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--4-1!../../node_modules/sass-loader/dist/cjs.js??ref--4-2!./arrow.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/saas/arrow.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/addStyles.js */ "./node_modules/style-loader/addStyles.js")(content, {});
+var update = __webpack_require__(/*! ../../node_modules/style-loader/addStyles.js */ "./node_modules/style-loader/addStyles.js")(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {}
 
 /***/ }),
 
-/***/ "./src/js/saas/style.scss":
-/*!********************************!*\
-  !*** ./src/js/saas/style.scss ***!
-  \********************************/
+/***/ "./src/saas/style.scss":
+/*!*****************************!*\
+  !*** ./src/saas/style.scss ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--4-1!../../../node_modules/sass-loader/dist/cjs.js??ref--4-2!./style.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/js/saas/style.scss");
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--4-1!../../node_modules/sass-loader/dist/cjs.js??ref--4-2!./style.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/saas/style.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/addStyles.js */ "./node_modules/style-loader/addStyles.js")(content, {});
+var update = __webpack_require__(/*! ../../node_modules/style-loader/addStyles.js */ "./node_modules/style-loader/addStyles.js")(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {}

@@ -1,7 +1,7 @@
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs';
 import Swiper from 'swiper';
-import "./saas/style.scss";
-import "./saas/arrow.scss";
+import "../saas/style.scss";
+import "../saas/arrow.scss";
 
 // why?
 // swiper.js does not work at first loading.
@@ -14,10 +14,42 @@ class Onigiri{
     this.onigiriW = this.onigiri.clientWidth;
     this.onigiriH = this.onigiri.clientHeight;
     this.rotDirection = 1;
+    this.startX = 0;
+    this.startY = 0;
+    this.dragFlag = false;
+    this.onigiri.addEventListener('mousedown', this.dragStart.bind(this));
+    this.onigiri.addEventListener('mouseup', this.dragEnd.bind(this));
+    window.addEventListener('mouseup', this.dragEnd.bind(this), false);
+    window.addEventListener('mousemove', this.dragMove.bind(this), false);
+    this.onigiri.ondragstart = () => {return false;};
+  }
+
+  dragStart(event){
+    console.log(event);
+    this.dragFlag = true;
+    const bcr = this.onigiri.getBoundingClientRect();
+    this.startX = event.pageX - (bcr.left + window.pageXOffset);
+    this.startY = event.pageY - (bcr.top + window.pageYOffset);
+  }
+
+  dragEnd(event){
+    console.log(event);
+    this.dragFlag = false;
+  }
+
+  dragMove(event){
+    // event.preventDefault();
+    if(this.dragFlag){
+      this.onigiri.style.MozTransform = `translateX(${(event.pageX - this.startX)}px) translateY(${(event.pageY - this.startY)}px)`;
+      this.onigiri.style.webkitTransform = `translateX(${(event.pageX - this.startX)}px) translateY(${(event.pageY - this.startY)}px)`;
+      // this.onigiri.style.left = (event.pageX - this.startX) + "px";
+      // this.onigiri.style.top = (event.pageY - this.startY) + "px";
+      // console.log(event);
+    }
+
   }
 
   move(x, y, rot=360, duration=1000, center=true, callback=()=>{}){
-
     let targetX = x;
     let targetY = y;
     if(center){
@@ -184,13 +216,14 @@ class SkillOnigiri{
 
 class PageController{
   constructor(){
+
     this.setSliderFlag = false;
 
     this.nasuo = new Nasuo();
     console.log(this.nasuo);
 
     this.onigiri = new Onigiri();
-    document.onclick = (e) => this.onigiri.move(e.pageX, e.pageY, 360, 1000, true, this.onigiriMoveCallback.bind(this));
+    document.onclick = (e) => this.onigiri.move(e.pageX, e.pageY, 360, 750, true, this.onigiriMoveCallback.bind(this));
     this.onigiri.appeal();
 
     this.skillOnigiri = new SkillOnigiri(this.onigiri);

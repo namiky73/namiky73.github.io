@@ -46,7 +46,7 @@
     "drupal-common": "0.0.2",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
-    "swiper": "^5.2.1",
+    "swiper": "^6.5.1",
     "zepto": "^1.0.1"
   }
 }
